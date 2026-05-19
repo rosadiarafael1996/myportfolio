@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio website for John Rafael J. Rosadia, hospitality service professional and information technology student.">
+  <title>John Rafael J. Rosadia | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <canvas id="signalCanvas" class="signal-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand-mark" href="#top" aria-label="Go to home">
+      <span>JR</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="#profile">Profile</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="mode-toggle" type="button" aria-pressed="false">
+      <span class="toggle-dot" aria-hidden="true"></span>
+      <span class="toggle-text">Glow</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Hospitality Service + Information Technology</p>
+        <h1 id="hero-title">John Rafael J. Rosadia</h1>
+        <p class="hero-lede">
+          A service-driven professional with hands-on front office, barista, and casino floor experience, now building a stronger future through Information Technology.
+        </p>
+        <div class="hero-actions" aria-label="Portfolio actions">
+          <a class="button button-primary" href="#contact">Start a Conversation</a>
+          <a class="button button-secondary" href="assets/john-rosadia-cv.pdf" download>Download CV</a>
+        </div>
+        <div class="quick-facts" aria-label="Quick facts">
+          <span>Tanza, Cavite</span>
+          <span>Open to service and tech roles</span>
+          <span>References available</span>
+        </div>
+      </div>
+
+      <div class="identity-stage reveal">
+        <div class="portrait-frame" data-tilt>
+          <img src="assets/john-rosadia-profile.png" alt="Portrait of John Rafael J. Rosadia">
+          <div class="portrait-scan" aria-hidden="true"></div>
+        </div>
+        <div class="identity-panel">
+          <p class="panel-label">Candidate Signal</p>
+          <div class="signal-row">
+            <span>Service</span>
+            <strong>Front Office</strong>
+          </div>
+          <div class="signal-row">
+            <span>Operations</span>
+            <strong>Gaming Floor</strong>
+          </div>
+          <div class="signal-row">
+            <span>Direction</span>
+            <strong>Information Tech</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section profile-section" id="profile" aria-labelledby="profile-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Profile</p>
+        <h2 id="profile-title">Calm service, sharp follow-through, steady growth.</h2>
+      </div>
+      <div class="profile-grid">
+        <article class="feature-panel reveal" data-tilt>
+          <p class="panel-label">Career Objective</p>
+          <p>
+            To contribute to an organization's objectives through service and responsibility, while developing a successful career where skills are fully utilized and strengthened through continued growth opportunities.
+          </p>
+        </article>
+        <article class="feature-panel reveal" data-tilt>
+          <p class="panel-label">Working Style</p>
+          <p>
+            John brings a people-first approach from hospitality work, keeps details organized under pressure, and combines teamwork with adaptability across customer-facing environments.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Experience</p>
+        <h2 id="experience-title">Hands-on roles in hotels, beverage service, and casino operations.</h2>
+      </div>
+
+      <div class="timeline" aria-label="Work experience timeline">
+        <details class="timeline-item reveal" open>
+          <summary>
+            <span class="timeline-year">2016 - 2017</span>
+            <span class="timeline-title">Hotel Jen Manila</span>
+            <span class="timeline-role">Front Office Lobby Attendant + Barista</span>
+          </summary>
+          <div class="timeline-content">
+            <p>Welcomed guests, responded to inquiries, gave directions, shared property information, and assisted with guest requirements and requests.</p>
+            <p>Prepared and served different types of coffee while supporting a warm and professional guest experience.</p>
+          </div>
+        </details>
+
+        <details class="timeline-item reveal">
+          <summary>
+            <span class="timeline-year">2017 - 2019</span>
+            <span class="timeline-title">Okada Manila</span>
+            <span class="timeline-role">Shuffler</span>
+          </summary>
+          <div class="timeline-content">
+            <p>Kept playing cards, paperwork, and table-related supplies organized and ready for live gaming operations.</p>
+            <p>Shuffled and counted playing cards for the gaming floor with a focus on accuracy, order, and consistency.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="content-section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Skills</p>
+        <h2 id="skills-title">A practical skill set built around people, timing, and trust.</h2>
+      </div>
+
+      <div class="skill-toolbar reveal" aria-label="Filter skills">
+        <button class="filter-button active" type="button" data-filter="all">All</button>
+        <button class="filter-button" type="button" data-filter="service">Service</button>
+        <button class="filter-button" type="button" data-filter="operations">Operations</button>
+        <button class="filter-button" type="button" data-filter="growth">Growth</button>
+      </div>
+
+      <div class="skill-grid">
+        <article class="skill-card reveal" data-skill="service" data-tilt>
+          <span class="skill-index">01</span>
+          <h3>Leadership</h3>
+          <p>Guides tasks with composure and accountability.</p>
+        </article>
+        <article class="skill-card reveal" data-skill="service operations" data-tilt>
+          <span class="skill-index">02</span>
+          <h3>Teamwork</h3>
+          <p>Works well with people in active service settings.</p>
+        </article>
+        <article class="skill-card reveal" data-skill="operations" data-tilt>
+          <span class="skill-index">03</span>
+          <h3>Time Management</h3>
+          <p>Keeps service flow organized and responsive.</p>
+        </article>
+        <article class="skill-card reveal" data-skill="growth operations" data-tilt>
+          <span class="skill-index">04</span>
+          <h3>Adaptability</h3>
+          <p>Adjusts quickly across guest needs and workplace demands.</p>
+        </article>
+        <article class="skill-card reveal" data-skill="growth" data-tilt>
+          <span class="skill-index">05</span>
+          <h3>Critical Thinking</h3>
+          <p>Handles requests and details with careful judgment.</p>
+        </article>
+        <article class="skill-card reveal" data-skill="service" data-tilt>
+          <span class="skill-index">06</span>
+          <h3>Interpersonal Skills</h3>
+          <p>Communicates clearly with guests, teammates, and clients.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section education-section" id="education" aria-labelledby="education-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Education</p>
+        <h2 id="education-title">Hospitality foundation with an Information Technology path.</h2>
+      </div>
+
+      <div class="education-grid">
+        <article class="education-card reveal" data-tilt>
+          <span>2023 - 2024</span>
+          <h3>Lyceum of the Philippines - Cavite</h3>
+          <p>Bachelor of Science in Information Technology</p>
+        </article>
+        <article class="education-card reveal" data-tilt>
+          <span>2015 - 2016</span>
+          <h3>MIHCA</h3>
+          <p>Magsaysay Center for Hospitality & Culinary Arts, Food & Beverage Service</p>
+        </article>
+        <article class="education-card reveal" data-tilt>
+          <span>2009 - 2013</span>
+          <h3>St. Augustine School - Tanza</h3>
+          <p>Secondary education</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-copy reveal">
+        <p class="section-kicker">Contact</p>
+        <h2 id="contact-title">Ready for roles where service quality and reliability matter.</h2>
+        <p>
+          Available for opportunities in hospitality, customer service, operations support, and entry-level technology-aligned roles.
+        </p>
+      </div>
+      <div class="contact-actions reveal">
+        <a class="contact-link" href="mailto:Rosadiarafael56@gmail.com" data-copy="Rosadiarafael56@gmail.com">
+          <span>Email</span>
+          <strong>Rosadiarafael56@gmail.com</strong>
+        </a>
+        <a class="contact-link" href="tel:+639772080081" data-copy="+63 9772080081">
+          <span>Phone</span>
+          <strong>+63 9772080081</strong>
+        </a>
+        <button class="contact-link copy-address" type="button" data-copy="0297 Bd. Calle Sermon St., Julugan 3, Tanza, Cavite">
+          <span>Location</span>
+          <strong>0297 Bd. Calle Sermon St., Julugan 3, Tanza, Cavite</strong>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>John Rafael J. Rosadia</p>
+    <a href="#top">Back to top</a>
+  </footer>
+</body>
+</html>
